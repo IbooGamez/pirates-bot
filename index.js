@@ -20,19 +20,19 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === prefix + 'website') {
-    msg.reply('The Website is **https://www.piratesmc.club**');
+    msg.reply('The Website is **http://www.piratesmc.club**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === prefix + 'store') {
-    msg.reply('The Website is **https://store.piratesmc.club**');
+    msg.reply('The Website is **http://store.piratesmc.club**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === prefix + 'apply') {
-    msg.reply('Apply at **https://www.piratesmc.club**');
+    msg.reply('Apply at **http://www.piratesmc.club**');
   }
 });
 
