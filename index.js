@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = 'p!'
+var prefix = '!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -8,25 +8,31 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === prefix + 'help') {
-    msg.reply('The bot prefix is **p!** and here are the commands: **ip, website, store**');
+    msg.reply('The bot prefix is **!** and here are the commands: **IP, Website, Store, and Apply**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === prefix + 'ip') {
-    msg.reply('The IP is **PiratesHCF.club**');
+    msg.reply('The IP is **play.piratesmc.club**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === prefix + 'website') {
-    msg.reply('The Website is **https://piratehcf.enjin.com**');
+    msg.reply('The Website is **https://www.piratesmc.club**');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === prefix + 'store') {
-    msg.reply('The Website is **https://piratehcf.buycraft.net**');
+    msg.reply('The Website is **https://store.piratesmc.club**');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === prefix + 'apply') {
+    msg.reply('Apply at **https://www.piratesmc.club**');
   }
 });
 
